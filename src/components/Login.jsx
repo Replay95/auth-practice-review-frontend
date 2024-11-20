@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaLock } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import "./Login.css";
 const BASE_URL = "https://auth-practice-review-backend.vercel.app/";
 
 function Login() {
