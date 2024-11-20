@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import "./Dashboard.css";
 const BASE_URL = "https://auth-practice-review-backend.vercel.app/";
 
 function Dashboard() {
@@ -38,7 +38,7 @@ function Dashboard() {
     fetchUserInfo();
   }, []);
   return (
-    <div>
+    <form className="background">
       <h2>ユーザー情報</h2>
       {error && <div className="error">{error}</div>}
       <form>
@@ -50,7 +50,7 @@ function Dashboard() {
       <div className="button-container">
         <button onClick={() => navigate("/")}>ログイン画面へ</button>
       </div>
-    </div>
+    </form>
   );
 }
 
