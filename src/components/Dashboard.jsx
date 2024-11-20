@@ -39,9 +39,9 @@ function Dashboard() {
   }, []);
   return (
     <form className="background">
-      <h2>ユーザー情報</h2>
-      {error && <div className="error">{error}</div>}
-      <form>
+      <form className="text-container">
+        <h2>ユーザー情報</h2>
+        {error && <div className="error">{error}</div>}
         <p>ID:{userInfo.id}</p>
         <p>email:{userInfo.email}</p>
         <p>password:{userInfo.password}</p>
